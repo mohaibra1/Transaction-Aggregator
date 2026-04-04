@@ -2,22 +2,33 @@ package aggregator;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 @RestController
 public class AggregateController {
-
+    private final RestTemplate restTemplate =  new RestTemplate();
     //1. create the /aggregate endpoint
     @GetMapping("/aggregate")
-    public String index() {
-        //2. Initialize the tool to make external calls
-        RestTemplate restTemplate = new RestTemplate();
+    public List<Transaction> aggregate(@RequestParam String account) {
+        String url1 = "http://localhost:8888/transactions?account=" + account;
+        String url2 = "http://localhost:8889/transactions?account=" + account;
 
-        //3. Define the target address
-        String url = "http://localhost:8889/ping";
+        Transaction[] server1Data = restTemplate.getForObject(url1, Transaction[].class);
+        Transaction[] server2Data = restTemplate.getForObject(url2, Transaction[].class);
 
-        //4. Call the other server and get the plain text response
-        String response = restTemplate.getForObject(url, String.class);
+        List<Transaction> allTransactions = new ArrayList<>();
+        if (server1Data != null) {
+            allTransactions.addAll(Arrays.asList(server1Data));
+        }
+        if (server2Data != null) {
+            allTransactions.addAll(Arrays.asList(server2Data));
+        }
 
-        //5. Return that exact string to your client
-        return response;
+        allTransactions.sort(Comparator.comparing(Transaction::getTimestamp).reversed());
+
+        return allTransactions;
     }
 }

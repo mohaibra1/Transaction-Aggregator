@@ -19,6 +19,9 @@ files:
   - name: src/aggregator/PingController.java
     visible: true
     learner_created: true
+  - name: src/aggregator/Transaction.java
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/424/stages/2484/implement#comment
 status: Solved
 feedback:
