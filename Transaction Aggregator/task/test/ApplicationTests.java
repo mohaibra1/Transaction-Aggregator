@@ -9,6 +9,7 @@ import org.hyperskill.hstest.testing.expect.json.builder.JsonObjectBuilder;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static org.hyperskill.hstest.testing.expect.Expectation.expect;
@@ -33,7 +34,7 @@ public class ApplicationTests extends SpringTest {
             var expected = Stream.of(list1, list2)
                     .flatMap(List::stream)
                     .sorted(Comparator.comparing(Transaction::timestamp).reversed())
-                    .toList();
+                    .collect(Collectors.toList());
             try {
                 checkJson(response, expected);
                 result = CheckResult.correct();
@@ -75,13 +76,20 @@ public class ApplicationTests extends SpringTest {
     private String getRequestDetails(HttpResponse response) {
         var uri = response.getRequest().getUri();
         var method = response.getRequest().getMethod();
-        return "\nRequest: %s %s".formatted(method, uri);
+        return String.format("\nRequest: %s %s", method, uri);
     }
+
 
     @DynamicTest
     DynamicTesting[] dt = new DynamicTesting[] {
             () -> testAggregate("033"),
+            () -> testAggregate("033"),
+            () -> testAggregate("033"),
             () -> testAggregate("128"),
+            () -> testAggregate("128"),
+            () -> testAggregate("128"),
+            () -> testAggregate("255"),
+            () -> testAggregate("255"),
             () -> testAggregate("255"),
             this::stopMockServers
     };

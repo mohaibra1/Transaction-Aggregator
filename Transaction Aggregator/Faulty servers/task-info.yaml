@@ -14,5 +14,8 @@ files:
   - name: test/DataServer.java
     learner_created: false
 feedback_link: https://hyperskill.org/projects/424/stages/2486/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 05 Apr 2026 08:54:25 UTC"
 record: -1
