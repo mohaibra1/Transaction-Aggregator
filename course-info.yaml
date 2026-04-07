@@ -9,8 +9,7 @@ summary: "<p>Backend services often depends on other services to receive necessa
   \ unexpected issues gracefully. You will learn how to implement retries to ensure\
   \ system resilience and continuity of service even when remote servers are temporarily\
   \ unavailable.\_Additionally, you'll gain experience in applying caching to optimize\
-  \ system performance and efficiency.</p><br/><br/>Learn more at <a href=\"https://hyperskill.org/projects/424?utm_source=ide&utm_medium=ide&utm_campaign=ide&utm_content=project-card\"\
-  >https://hyperskill.org/projects/424</a>"
+  \ system performance and efficiency.</p>"
 programming_language: Java
 programming_language_version: 11
 content:

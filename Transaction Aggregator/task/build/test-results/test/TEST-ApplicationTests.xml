@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-05T08:54:19.175Z" hostname="MOHAIBRA" time="5.859">
+<testsuite name="ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-04-07T21:36:19.732Z" hostname="MOHAIBRA" time="17.21">
   <properties/>
-  <testcase name="start" classname="ApplicationTests" time="5.859"/>
+  <testcase name="start" classname="ApplicationTests" time="17.21"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 ?[0;34m
@@ -11,122 +11,80 @@ Start test 1?[0m
 ?[0m?[0;34m \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
 ?[0m?[0;34m  '  |____| .__|_| |_|_| |_\__, | / / / /
 ?[0m?[0;34m =========|_|==============|___/=/_/_/_/
-?[0m?[0;34m :: Spring Boot ::                (v3.2.0)
 ?[0m?[0;34m
-?[0m?[0;34m2026-04-05T10:54:20.179+02:00  INFO 19220 --- [    Test worker] aggregator.Application                   : Starting Application using Java 21.0.10 with PID 19220 (started by 32492 in C:\Users\32492\IdeaProjects\Transaction Aggregator\Transaction Aggregator\task)
-?[0m?[0;34m2026-04-05T10:54:20.185+02:00  INFO 19220 --- [    Test worker] aggregator.Application                   : No active profile set, falling back to 1 default profile: "default"
-?[0m?[0;34m2026-04-05T10:54:22.485+02:00  INFO 19220 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-?[0m?[0;34m2026-04-05T10:54:22.503+02:00  INFO 19220 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-?[0m?[0;34m2026-04-05T10:54:22.503+02:00  INFO 19220 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
-?[0m?[0;34m2026-04-05T10:54:22.601+02:00  INFO 19220 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-?[0m?[0;34m2026-04-05T10:54:22.604+02:00  INFO 19220 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2348 ms
-?[0m?[0;34m2026-04-05T10:54:23.630+02:00  INFO 19220 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
-?[0m?[0;34m2026-04-05T10:54:23.719+02:00  INFO 19220 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
-?[0m?[0;34m2026-04-05T10:54:23.737+02:00  INFO 19220 --- [    Test worker] aggregator.Application                   : Started Application in 4.14 seconds (process running for 5.402)
-?[0;34m2026-04-05T10:54:24.255+02:00  INFO 19220 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-?[0m?[0;34m2026-04-05T10:54:24.256+02:00  INFO 19220 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-?[0m?[0;34m2026-04-05T10:54:24.258+02:00  INFO 19220 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
+?[0m?[0;34m :: Spring Boot ::                (v3.5.9)
+?[0m?[0;34m
+?[0m?[0;34m2026-04-07T23:36:22.588+02:00  INFO 23724 --- [    Test worker] aggregator.Application                   : Starting Application using Java 23.0.2 with PID 23724 (started by 32492 in C:\Users\32492\IdeaProjects\Transaction Aggregator\Transaction Aggregator\task)
+?[0m?[0;34m2026-04-07T23:36:22.599+02:00  INFO 23724 --- [    Test worker] aggregator.Application                   : No active profile set, falling back to 1 default profile: "default"
+?[0m?[0;34m2026-04-07T23:36:25.521+02:00  INFO 23724 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+?[0m?[0;34m2026-04-07T23:36:25.560+02:00  INFO 23724 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+?[0m?[0;34m2026-04-07T23:36:25.560+02:00  INFO 23724 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+?[0m?[0;34m2026-04-07T23:36:25.673+02:00  INFO 23724 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+?[0m?[0;34m2026-04-07T23:36:25.674+02:00  INFO 23724 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2959 ms
+?[0m?[0;34m2026-04-07T23:36:27.633+02:00  INFO 23724 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+?[0m?[0;34m2026-04-07T23:36:27.759+02:00  INFO 23724 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+?[0m?[0;34m2026-04-07T23:36:27.777+02:00  INFO 23724 --- [    Test worker] aggregator.Application                   : Started Application in 6.597 seconds (process running for 9.016)
+?[0;34m2026-04-07T23:36:28.485+02:00  INFO 23724 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+?[0m?[0;34m2026-04-07T23:36:28.485+02:00  INFO 23724 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+?[0m?[0;34m2026-04-07T23:36:28.485+02:00  INFO 23724 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+?[0;34mResponse code529 TOO MANY REQUESTS
+?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
+?[0;34mserver-2 is executing a long query for 800 ms...
+?[0;34mserver-1 is executing a long query for 800 ms...
 ?[0m?[0;34m
 ?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=033
 ?[0m?[1;31m
 Start test 2?[0m
+?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
+?[0m?[0;34mResponse code529 TOO MANY REQUESTS
+?[0m?[0;34mserver-2 is executing a long query for 1600 ms...
+?[0m?[0;34mserver-1 is executing a long query for 1600 ms...
 ?[0;34m
-?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=033
+?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=128
 ?[0m?[1;31m
 Start test 3?[0m
 ?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
+?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0m?[0;34mResponse code529 TOO MANY REQUESTS
+?[0m?[0;34mResponse code529 TOO MANY REQUESTS
+?[0m?[0;34mserver-1 is executing a long query for 3200 ms...
+?[0m?[0;34mserver-2 is executing a long query for 3200 ms...
+?[0;34m
+?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=255
+?[0m?[1;31m
+Start test 4?[0m
 ?[0;34m
 ?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=033
 ?[0m?[1;31m
-Start test 4?[0m
-?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0;34m
-?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=128
-?[0m?[1;31m
 Start test 5?[0m
-?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0;34m
-?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=128
+?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=033
 ?[0m?[1;31m
 Start test 6?[0m
-?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0;34m
 ?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=128
 ?[0m?[1;31m
 Start test 7?[0m
-?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0;34m
-?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=255
+?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=128
 ?[0m?[1;31m
 Start test 8?[0m
-?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0;34m
 ?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=255
 ?[0m?[1;31m
 Start test 9?[0m
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code503 503 SERVICE_UNAVAILABLE
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
-?[0m?[0;34mResponse code529 TOO MANY REQUESTS
 ?[0;34m
 ?[0m?[0;34mRequest: GET http://localhost:8080/aggregate?account=255
 ?[0m?[1;31m
